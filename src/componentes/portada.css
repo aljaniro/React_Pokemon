@@ -1,0 +1,11 @@
+.imagen{
+    transition:all .5s ease-in-out;
+    opacity: 0.5;
+    width: 100%;
+	height: auto;
+	max-width: 2000px;
+}
+.imagen:hover {filter: blur(5px);}
+
+.contenedor:hover .imagen {-webkit-transform:scale(1.3);transform:scale(1.3);}
+.contenedor {overflow:hidden;}

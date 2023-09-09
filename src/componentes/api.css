@@ -1,0 +1,27 @@
+.container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    gap: 30px;
+    
+}
+.card{
+    background: gold;
+    width: 600px;
+   
+}
+.card-title{
+      color: #fff;
+        background-color: #474747;
+        text-shadow: #fff 0 0 10px;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+}
+
+    

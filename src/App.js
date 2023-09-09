@@ -1,24 +1,22 @@
-import logo from './logo.svg';
+
+import Api from './componentes/api';
 import './App.css';
+import { Provedo } from './provider/apicontest';
+import Portada from './componentes/portada';
+import Navbar from './componentes/navbar';
+
+// Create a client
 
 function App() {
   return (
+    <Provedo>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar></Navbar>
+      <Portada></Portada>
+    <div className="titulo text-center" ><h1 style={{color:"goldenrod"}}>LISTA DE POKEMON</h1></div>
+      <Api></Api>
     </div>
+    </Provedo>
   );
 }
 
